@@ -9,11 +9,17 @@
 /* Begin PBXBuildFile section */
 		284894B6271350E900B977E7 /* SwiftTacToeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284894B5271350E900B977E7 /* SwiftTacToeApp.swift */; };
 		284894B8271350E900B977E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284894B7271350E900B977E7 /* ContentView.swift */; };
-		284894BA271350EB00B977E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 284894B9271350EB00B977E7 /* Assets.xcassets */; };
-		284894BD271350EB00B977E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 284894BC271350EB00B977E7 /* Preview Assets.xcassets */; };
-		284894C7271350EB00B977E7 /* SwiftTacToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284894C6271350EB00B977E7 /* SwiftTacToeTests.swift */; };
 		284894D1271350EB00B977E7 /* SwiftTacToeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284894D0271350EB00B977E7 /* SwiftTacToeUITests.swift */; };
 		284894D3271350EB00B977E7 /* SwiftTacToeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284894D2271350EB00B977E7 /* SwiftTacToeUITestsLaunchTests.swift */; };
+		284894E02713510100B977E7 /* UniqueStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284894DF2713510100B977E7 /* UniqueStack.swift */; };
+		284894E22713521A00B977E7 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284894E12713521A00B977E7 /* GameModel.swift */; };
+		284894E4271357BE00B977E7 /* UniqueStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284894E3271357BE00B977E7 /* UniqueStackTests.swift */; };
+		284894E6271359B900B977E7 /* GameModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284894E5271359B900B977E7 /* GameModelTests.swift */; };
+		284894E82713724A00B977E7 /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284894E72713724A00B977E7 /* GameBoard.swift */; };
+		284894EA271377C800B977E7 /* GamePlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284894E9271377C800B977E7 /* GamePlayView.swift */; };
+		284894EC271377D900B977E7 /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284894EB271377D900B977E7 /* SquareView.swift */; };
+		284894EE2714ACAD00B977E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 284894ED2714ACAD00B977E7 /* Assets.xcassets */; };
+		284894F22714ADC100B977E7 /* GameControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284894F12714ADC100B977E7 /* GameControlsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +43,19 @@
 		284894B2271350E900B977E7 /* SwiftTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		284894B5271350E900B977E7 /* SwiftTacToeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTacToeApp.swift; sourceTree = "<group>"; };
 		284894B7271350E900B977E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		284894B9271350EB00B977E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		284894BC271350EB00B977E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		284894C2271350EB00B977E7 /* SwiftTacToeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTacToeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		284894C6271350EB00B977E7 /* SwiftTacToeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTacToeTests.swift; sourceTree = "<group>"; };
 		284894CC271350EB00B977E7 /* SwiftTacToeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTacToeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		284894D0271350EB00B977E7 /* SwiftTacToeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTacToeUITests.swift; sourceTree = "<group>"; };
 		284894D2271350EB00B977E7 /* SwiftTacToeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTacToeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		284894DF2713510100B977E7 /* UniqueStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniqueStack.swift; sourceTree = "<group>"; };
+		284894E12713521A00B977E7 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		284894E3271357BE00B977E7 /* UniqueStackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniqueStackTests.swift; sourceTree = "<group>"; };
+		284894E5271359B900B977E7 /* GameModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModelTests.swift; sourceTree = "<group>"; };
+		284894E72713724A00B977E7 /* GameBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoard.swift; sourceTree = "<group>"; };
+		284894E9271377C800B977E7 /* GamePlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayView.swift; sourceTree = "<group>"; };
+		284894EB271377D900B977E7 /* SquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
+		284894ED2714ACAD00B977E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		284894F12714ADC100B977E7 /* GameControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControlsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,24 +108,22 @@
 			children = (
 				284894B5271350E900B977E7 /* SwiftTacToeApp.swift */,
 				284894B7271350E900B977E7 /* ContentView.swift */,
-				284894B9271350EB00B977E7 /* Assets.xcassets */,
-				284894BB271350EB00B977E7 /* Preview Content */,
+				284894DF2713510100B977E7 /* UniqueStack.swift */,
+				284894E12713521A00B977E7 /* GameModel.swift */,
+				284894E72713724A00B977E7 /* GameBoard.swift */,
+				284894E9271377C800B977E7 /* GamePlayView.swift */,
+				284894EB271377D900B977E7 /* SquareView.swift */,
+				284894ED2714ACAD00B977E7 /* Assets.xcassets */,
+				284894F12714ADC100B977E7 /* GameControlsView.swift */,
 			);
 			path = SwiftTacToe;
-			sourceTree = "<group>";
-		};
-		284894BB271350EB00B977E7 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				284894BC271350EB00B977E7 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		284894C5271350EB00B977E7 /* SwiftTacToeTests */ = {
 			isa = PBXGroup;
 			children = (
-				284894C6271350EB00B977E7 /* SwiftTacToeTests.swift */,
+				284894E3271357BE00B977E7 /* UniqueStackTests.swift */,
+				284894E5271359B900B977E7 /* GameModelTests.swift */,
 			);
 			path = SwiftTacToeTests;
 			sourceTree = "<group>";
@@ -231,8 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				284894BD271350EB00B977E7 /* Preview Assets.xcassets in Resources */,
-				284894BA271350EB00B977E7 /* Assets.xcassets in Resources */,
+				284894EE2714ACAD00B977E7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +267,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				284894B8271350E900B977E7 /* ContentView.swift in Sources */,
+				284894E22713521A00B977E7 /* GameModel.swift in Sources */,
+				284894E82713724A00B977E7 /* GameBoard.swift in Sources */,
+				284894F22714ADC100B977E7 /* GameControlsView.swift in Sources */,
+				284894E02713510100B977E7 /* UniqueStack.swift in Sources */,
+				284894EC271377D900B977E7 /* SquareView.swift in Sources */,
+				284894EA271377C800B977E7 /* GamePlayView.swift in Sources */,
 				284894B6271350E900B977E7 /* SwiftTacToeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +281,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				284894C7271350EB00B977E7 /* SwiftTacToeTests.swift in Sources */,
+				284894E4271357BE00B977E7 /* UniqueStackTests.swift in Sources */,
+				284894E6271359B900B977E7 /* GameModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,7 +434,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftTacToe/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = AZ59WCD7SF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -427,7 +443,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,7 +464,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftTacToe/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = AZ59WCD7SF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -457,7 +473,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,7 +496,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AZ59WCD7SF;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -505,7 +521,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AZ59WCD7SF;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

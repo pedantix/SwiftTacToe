@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var gameModel: GameModel
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Spacer(minLength: 80)
+            ZStack(alignment: .center) {
+                GamePlayView()
+                GameBoard()
+            }.aspectRatio(1.0, contentMode: .fit)
+            GameControlsView()
+        }.padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(GameModel())
     }
 }

@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftTacToeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(GameModel())
         }
     }
 }
