@@ -10,6 +10,15 @@ import SwiftUI
 struct GameControlsView: View {
     @EnvironmentObject var gameModel: GameModel
 
+    @ViewBuilder
+    private func resultsView(text: String) -> some View {
+        Text(text).font(.callout.weight(.heavy))
+        Spacer()
+        undoButton
+        Spacer()
+        resetButton
+    }
+
     var body: some View {
         VStack {
             Spacer()
@@ -21,11 +30,9 @@ struct GameControlsView: View {
                 Spacer()
                 resetButton
             case .endGame:
-                Text("Winner \(winningPlayer)").font(.callout.weight(.heavy))
-                Spacer()
-                undoButton
-                Spacer()
-                resetButton
+                resultsView(text: "Winner \(winningPlayer)")
+            case .draw:
+                resultsView(text: "It's a draw 🥱")
             }
             Spacer()
         }

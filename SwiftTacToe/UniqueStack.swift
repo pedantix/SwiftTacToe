@@ -17,6 +17,7 @@ struct UniqueStack<Element: Equatable> {
     }
 
     private var array = [Element]()
+    private let capacity = 9
 
     /// Preview top element of the stack
     func peek() -> Element? {
@@ -44,5 +45,10 @@ struct UniqueStack<Element: Equatable> {
     /// An array of elements in the stack in the order they were added
     var arrayCopy: Array<Element> {
         return array
+    }
+
+    /// True if full
+    var isFull: Bool {
+        return count >= capacity
     }
 }

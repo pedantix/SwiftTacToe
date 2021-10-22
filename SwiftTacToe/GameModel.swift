@@ -39,6 +39,7 @@ enum GameState {
     case readyToStart
     case inPlay
     case endGame
+    case draw
 }
 
 class GameModel: ObservableObject {
@@ -112,6 +113,11 @@ class GameModel: ObservableObject {
                 gameState = .endGame
                 return
             }
+        }
+
+        if gameStack.isFull {
+            gameState = .draw
+            return
         }
     }
 

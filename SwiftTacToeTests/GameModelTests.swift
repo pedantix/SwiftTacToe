@@ -106,4 +106,22 @@ class GameModelTests: XCTestCase {
                                                   .none, .player2, .player2,
                                                   .none, .none, .player1])
     }
+
+    func testDrawOutcome() {
+        gameModel.makeMove(.topLeft)
+        gameModel.makeMove(.middleMiddle)
+        gameModel.makeMove(.topMiddle)
+        gameModel.makeMove(.topRight)
+        gameModel.makeMove(.bottomLeft)
+        gameModel.makeMove(.middleLeft)
+        gameModel.makeMove(.middleRight)
+        gameModel.makeMove(.bottomMiddle)
+        gameModel.makeMove(.bottomRight)
+
+        XCTAssertEqual(gameModel.gameBoardState, [.player1, .player1, .player2,
+                                                  .player2, .player2, .player1,
+                                                  .player1, .player2, .player1])
+
+        XCTAssertEqual(gameModel.gameState, .draw)
+    }
 }

@@ -40,4 +40,13 @@ class SwiftTacToeTests: XCTestCase {
             XCTAssert(error as? UniqueStack<Int>.Errors == UniqueStack.Errors.emptyStack)
         }
     }
+
+    func testShouldReturnFullWithNineElements() throws {
+        try (1...8).forEach { number in
+            try stack.push(number)
+            XCTAssertEqual(false, stack.isFull)
+        }
+        try stack.push(9)
+        XCTAssertEqual(true, stack.isFull)
+    }
 }
