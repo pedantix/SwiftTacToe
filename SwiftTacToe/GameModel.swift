@@ -43,7 +43,9 @@ enum GameState {
 }
 
 class GameModel: ObservableObject {
-    @Published private var gameStack: UniqueStack<GameMove> = UniqueStack()
+    public static let squareCount = 9
+
+    @Published private var gameStack: UniqueStack<GameMove> = UniqueStack(capacity: GameModel.squareCount)
     @Published private(set) var gameState = GameState.readyToStart
     @Published private(set) var isLastMoveValid = true
 
@@ -54,7 +56,7 @@ class GameModel: ObservableObject {
 
     /// Returns an array of 9 `SquareState`
     var gameBoardState: [PlayerMove?] {
-        var gameSquares = [PlayerMove?](repeating: .none, count: 9)
+        var gameSquares = [PlayerMove?](repeating: .none, count: GameModel.squareCount)
         var player1Moves = Set<GameMove>()
         var player2Moves = Set<GameMove>()
 

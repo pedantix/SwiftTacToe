@@ -41,7 +41,17 @@ class SwiftTacToeTests: XCTestCase {
         }
     }
 
-    func testShouldReturnFullWithNineElements() throws {
+
+    func testShouldNotReturnFullIfCapacityNotSet() throws {
+        try (1...4).forEach { number in
+            try stack.push(number)
+            XCTAssertEqual(false, stack.isFull)
+        }
+    }
+
+    func testShouldReturnFullWhenCapacityIsReached() throws {
+        var stack = UniqueStack<Int>(capacity: 9)
+
         try (1...8).forEach { number in
             try stack.push(number)
             XCTAssertEqual(false, stack.isFull)

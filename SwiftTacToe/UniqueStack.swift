@@ -16,8 +16,13 @@ struct UniqueStack<Element: Equatable> {
         case duplicateElement
     }
 
+    let capacity: Int?
+
     private var array = [Element]()
-    private let capacity = 9
+
+    init(capacity: Int? = nil) {
+        self.capacity = capacity
+    }
 
     /// Preview top element of the stack
     func peek() -> Element? {
@@ -49,6 +54,9 @@ struct UniqueStack<Element: Equatable> {
 
     /// True if full
     var isFull: Bool {
+        guard let capacity = self.capacity else {
+            return false
+        }
         return count >= capacity
     }
 }
