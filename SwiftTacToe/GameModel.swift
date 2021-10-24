@@ -43,12 +43,15 @@ enum GameState {
 }
 
 class GameModel: ObservableObject {
-    public static let squareCount = 9
-
-    @Published private var gameStack: UniqueStack<GameMove> = UniqueStack(capacity: GameModel.squareCount)
+    @Published private var gameStack: UniqueStack<GameMove> = GameModel.buildNewStack()
     @Published private(set) var gameState = GameState.readyToStart
     @Published private(set) var isLastMoveValid = true
 
+    public static let squareCount = 9
+
+    public static func buildNewStack() -> UniqueStack<GameMove> {
+        return UniqueStack(capacity: squareCount)
+    }
 
     var gameTurn: PlayerMove {
         return gameStack.count % 2 == 0 ? .player1 : .player2
@@ -130,7 +133,7 @@ class GameModel: ObservableObject {
 
     /// Reset the game back to the original state
     func reset() {
-        gameStack = .init()
+        gameStack = GameModel.buildNewStack()
         gameState = .readyToStart
     }
 }

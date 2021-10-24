@@ -124,4 +124,10 @@ class GameModelTests: XCTestCase {
 
         XCTAssertEqual(gameModel.gameState, .draw)
     }
+
+    func testShouldResetProperly() {
+        gameModel.reset()
+
+        testDrawOutcome()
+    }
 }
